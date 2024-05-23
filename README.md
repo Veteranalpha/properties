@@ -1,1 +1,1 @@
-# properties.github.io
+https://veteranalpha.github.io/properties/
