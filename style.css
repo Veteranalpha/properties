@@ -11,6 +11,7 @@ body{
     position: relative;
     background-color: #ffffff;
     color:#010101;
+    /* overflow:hidden; */
 }
 /* NAMING FONTS AND UTILITIES */
 .satoshi{
@@ -34,7 +35,7 @@ body{
 }
 .container{
     min-width:100% ;
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -146,7 +147,6 @@ body{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-
 }
 .property{
     cursor: pointer;
@@ -252,18 +252,18 @@ input[type = "checkbox"]:checked:after{
 }
 .price{
     font-weight: 900;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .description{
-    padding-top: 4px;
+    padding-top: 0.25rem;
     font-weight: 500;
     font-size:0.8rem;
 }
 
 .location{
     display: flex;
-    gap: 5px;
-    margin-top: 5px;
+    gap: 0.313rem;
+    margin-top:0.313rem;
 }
 .location_image{
     width:0.875rem;
@@ -275,8 +275,8 @@ input[type = "checkbox"]:checked:after{
 }
 .property_owner{
     border-top:1px solid #E2E8F0 ;
-    margin-top: 5px;
-    padding-top: 10px;
+    margin-top: 0.313rem;
+    padding-top: 0.625rem;
     font-size: 0.75rem;
     font-weight: 700;
 }
@@ -304,7 +304,7 @@ input[type = "checkbox"]:checked:after{
     cursor: pointer;
     align-items: center;
 }
-.footer{
+/* .footer{
     position: sticky;
     bottom: 0;
     background-color: #ffffff;
@@ -316,7 +316,7 @@ input[type = "checkbox"]:checked:after{
     color: #010101;
     font-weight: 500;
     border-top:1px solid #010101;
-} 
+}  */
 /* ===============MEDIA QUERIES=========== */
 
 @media  (max-width:1046px) {
@@ -338,16 +338,33 @@ input[type = "checkbox"]:checked:after{
     .bar{
         display: block;
     }
+    .Av-properties{
+        margin: 0rem 2rem;
+    }
 }
+@media (max-width:870px) {
+    html{
+        font-size:12px;
+    }
+}
+
 @media (max-width:480px) {
     html{
-        font-size:10px;
-    }
-    .property{
-        width: 100%;
+        font-size:8px;
     }
     .Properties{
-        flex: 1 1 calc(100% - 2rem); /* Full width on smallest screens */;
+        width: 100%;
+        display: flex;
+        gap: 1.25rem;
+        flex-wrap: wrap;
     }
+
+}
+@media (max-width:380px) {
+    html{
+        font-size: 7px;   
+    }
+   
+
 }
 
