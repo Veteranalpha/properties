@@ -319,57 +319,62 @@ input[type = "checkbox"]:checked:after{
 }  */
 /* ===============MEDIA QUERIES=========== */
 
-@media  (max-width:1046px) {
-    html{
+/* Adjusting font sizes for smaller screens */
+@media (max-width:1046px) {
+    html {
         font-size: 14px;
     }
-    .nav-bar{
+    .nav-bar {
         display: none;
     }
-    .nav-btn{
-        display: none;
-    }   
-    .selection_tab{
+    .nav-btn {
         display: none;
     }
-    .main_content{
+    .selection_tab {
+        display: none;
+    }
+    .main_content {
         margin: 0;
     }
-    .bar{
+    .bar {
         display: block;
     }
-    .Av-properties{
+    .Av-properties {
         margin: 0rem 2rem;
     }
 }
+
 @media (max-width:870px) {
-    html{
-        font-size:12px;
+    html {
+        font-size: 12px;
     }
 }
 
 @media (max-width:480px) {
-    html{
-        font-size:10px;
+    html {
+        font-size: 10px;
     }
-    .Av-properties{
+    .Av-properties {
         margin: 0rem 0rem;
     }
-    .Properties{
-        width: 100%;
+    .Properties {
         display: grid;
-        grid-template-columns:1fr 1fr;
-        gap: 2rem;
-        flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem; /* Adjust gap as needed */
+        width: 100%;
     }
-    
-
+    .property {
+        width: 100%; /* Ensure property cards take full width of their grid cell */
+    }
+    .image_properties {
+        width: 100%; /* Ensure images fit within the property card */
+        height: auto; /* Maintain aspect ratio */
+    }
 }
-@media (max-width:380px) {
-    html{
-        font-size: 7px;   
-    }
-   
 
+@media (max-width:380px) {
+    html {
+        font-size: 7px;
+    }
 }
 
