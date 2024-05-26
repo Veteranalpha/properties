@@ -350,14 +350,19 @@ input[type = "checkbox"]:checked:after{
 
 @media (max-width:480px) {
     html{
-        font-size:8px;
+        font-size:10px;
+    }
+    .Av-properties{
+        margin: 0rem 0rem;
     }
     .Properties{
         width: 100%;
-        display: flex;
-        gap: 1.25rem;
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        gap: 2rem;
         flex-wrap: wrap;
     }
+    
 
 }
 @media (max-width:380px) {
