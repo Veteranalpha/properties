@@ -326,7 +326,7 @@ input[type = "checkbox"]:checked:after{
     font-weight: 500;
     border-top:1px solid #010101;
     overflow-x:hidden;
-} 
+}  
 /* ===============MEDIA QUERIES=========== */
 
 /* Adjusting font sizes for smaller screens */
@@ -347,7 +347,7 @@ input[type = "checkbox"]:checked:after{
         margin: 0;
     }
     .bar {
-        display: block;
+        /* display: block; */
         
     }
     .Av-properties {
@@ -383,16 +383,19 @@ input[type = "checkbox"]:checked:after{
     }
 }
 
-@media (max-width:518px) {
+@media (max-width: 518px) {
     html {
         font-size: 12px;
     }
     .Av-properties {
-        margin: 0rem 0rem;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
     }
     .Properties {
         position: relative;
         width: 100%;
+        max-width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem; /* Adjust gap as needed */
@@ -401,7 +404,7 @@ input[type = "checkbox"]:checked:after{
     .property {
         width: 100%; /* Ensure property cards take full width of their grid cell */
         height: auto; /* Maintain aspect ratio */
-        padding: .5rem;
+        padding: 0.5rem;
     }
     .image_properties {
         width: 100%; /* Ensure images fit within the property card */
@@ -409,25 +412,27 @@ input[type = "checkbox"]:checked:after{
         min-width: none;
         min-height: auto;
     }
-    .title{
+    .title {
         font-size: 1.5rem;
     }
-    .property-text .price{
+    .property-text .price {
         font-size: 1rem;
     }
-    .property-text .description{
-        font-size:0.8rem;
+    .property-text .description {
+        font-size: 0.8rem;
     }
-    .property-text .location_text{
-        font-size: .6rem;
+    .property-text .location_text {
+        font-size: 0.6rem;
     }
-    .property-text .property_owner{
+    .property-text .property_owner {
         font-size: 0.9rem;
     }
-    .container{
-        min-width:100%;
+    .container {
+        width: 100%;
+        max-width: 100%;
     }
 }
+
 
 @media (max-width:380px) {
     html {
