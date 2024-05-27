@@ -74,9 +74,11 @@ body{
 .bar{
     display: none;
     cursor: pointer;
-    width:4rem;
 }
-
+.bars{
+    font-size: 2rem;
+    
+}
 .title{
     font-size: 2.5rem;
     font-style: 3.125rem;
@@ -344,37 +346,91 @@ input[type = "checkbox"]:checked:after{
     }
 }
 
-@media (max-width:870px) {
+@media (max-width:884px) {
     html {
         font-size: 12px;
     }
+    .title{
+        font-size: 2rem;
+        padding:1rem 0rem 1rem 1rem;
+    }
+    .property{
+        height: auto;
+    }
+    .property-text .price{
+        font-size: 1.2rem;
+    }
+    .property-text .description{
+        font-size:1rem;
+    }
+    .property-text .location_text{
+        font-size: .8rem;
+    }
+    .property-text .property_owner{
+        font-size: 0.9rem;
+    }
 }
 
-@media (max-width:480px) {
+@media (max-width:518px) {
     html {
-        font-size: 10px;
+        font-size: 12px;
     }
     .Av-properties {
         margin: 0rem 0rem;
     }
     .Properties {
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem; /* Adjust gap as needed */
-        width: 100%;
+        flex-wrap: wrap;
     }
     .property {
         width: 100%; /* Ensure property cards take full width of their grid cell */
+        height: auto; /* Maintain aspect ratio */
+        padding: .5rem;
     }
     .image_properties {
         width: 100%; /* Ensure images fit within the property card */
         height: auto; /* Maintain aspect ratio */
+        min-width: none;
+        min-height: auto;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .property-text .price{
+        font-size: 1rem;
+    }
+    .property-text .description{
+        font-size:0.8rem;
+    }
+    .property-text .location_text{
+        font-size: .6rem;
+    }
+    .property-text .property_owner{
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width:380px) {
     html {
         font-size: 7px;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .property-text .price{
+        font-size: 1.5rem;
+    }
+    .property-text .description{
+        font-size: 1rem;
+    }
+    .property-text .location_text{
+        font-size: 1rem;
+    }
+    .property-text .property_owner{
+        font-size: 1.3rem;
     }
 }
 
