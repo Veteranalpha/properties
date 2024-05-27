@@ -9,6 +9,7 @@ html{
 
 body{
     position: relative;
+    max-width:100%;
     background-color: #ffffff;
     color:#010101;
     overflow-x: hidden;
@@ -288,19 +289,19 @@ input[type = "checkbox"]:checked:after{
     font-size: 0.75rem;
     font-weight: 700;
 }
-.check_more {
+/* .check_more {
     position: fixed;
     padding:0rem 2.5rem;
     bottom: 90px;
     width: 100%;
     height: 90px;
     backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px); /* Vendor prefix for better support */
+    -webkit-backdrop-filter: blur(2px);  Vendor prefix for better support 
     display: flex;
     justify-content: center;
     align-items: center;
 
-}
+} */
 
 .show_btn{
     position: relative;
@@ -313,20 +314,21 @@ input[type = "checkbox"]:checked:after{
     cursor: pointer;
     align-items: center;
 }
-.footer{
+.footer {
     position: sticky;
     bottom: 0;
     background-color: #ffffff;
     z-index: 50;
-    min-width: 100%;
+    width: 100%;
     padding: 35px 0px;
-    margin:0px 0px;
+    margin: 0px 0px;
     text-align: center;
     color: #010101;
     font-weight: 500;
-    border-top:1px solid #010101;
-    overflow-x:hidden;
-}  
+    border-top: 1px solid #010101;
+    overflow-x: hidden;
+} 
+
 /* ===============MEDIA QUERIES=========== */
 
 /* Adjusting font sizes for smaller screens */
@@ -377,6 +379,9 @@ input[type = "checkbox"]:checked:after{
     }
     .property-text .property_owner{
         font-size: 0.9rem;
+    }
+    .footer{
+        font-size:2rem;
     }
     .show_btn{
         display: none;
@@ -431,6 +436,9 @@ input[type = "checkbox"]:checked:after{
         width: 100%;
         max-width: 100%;
     }
+    .footer{
+        font-size:1.5rem;
+    }
 }
 
 
@@ -452,6 +460,9 @@ input[type = "checkbox"]:checked:after{
     }
     .property-text .property_owner{
         font-size: 1.3rem;
+    }
+    .footer{
+        font-size: 2rem;
     }
 }
 
