@@ -11,7 +11,7 @@ body{
     position: relative;
     background-color: #ffffff;
     color:#010101;
-    /* overflow:hidden; */
+    overflow-x: hidden;
 }
 /* NAMING FONTS AND UTILITIES */
 .satoshi{
@@ -34,11 +34,13 @@ body{
     height:2.188rem;
 }
 .container{
-    min-width:100% ;
+    max-width:100% ;
+    overflow-x: hidden;
     padding: 1.5rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 .nav-bar{
     display: flex;
@@ -72,8 +74,13 @@ body{
   opacity: 0.8;
 }
 .bar{
-    display: none;
+    display: none; 
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    padding:20px; 
     cursor: pointer;
+    z-index: 1000;
 }
 .bars{
     font-size: 2rem;
@@ -340,6 +347,7 @@ input[type = "checkbox"]:checked:after{
     }
     .bar {
         display: block;
+        
     }
     .Av-properties {
         margin: 0rem 2rem;
